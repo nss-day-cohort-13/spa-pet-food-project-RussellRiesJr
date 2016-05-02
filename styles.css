@@ -2,6 +2,10 @@
   background: orange;
 }
 
+.middle {
+  text-align: center;
+}
+
 .cardStyle {
   display: inline-block;
   border: 4px solid black;

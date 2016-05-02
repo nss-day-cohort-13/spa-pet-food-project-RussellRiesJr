@@ -1,7 +1,7 @@
 var dogRequest = new XMLHttpRequest();
 var catRequest = new XMLHttpRequest();
-var card = document.getElementById("cardLocation")
-var newCard = card;
+var dogCard = document.getElementById("cardLocation")
+var catCard = document.getElementById("catLocation")
 
 function getDogFood() {
   var data = JSON.parse(this.responseText).dog_brands;
@@ -18,7 +18,7 @@ function getDogFood() {
         var volumeName = "<p>" + volumeType[c].name + "</p>";
         var volumePrice = "<p>" + volumeType[c].price + "</p>";
         // console.log(productName, style, volumeName, volumePrice);
-        card.innerHTML += "<div class='cardStyle'>" + productName + style + volumeName + volumePrice + "</div>"
+        dogCard.innerHTML += "<div class='cardStyle'>" + productName + style + volumeName + volumePrice + "</div>"
       }
     }
   }
@@ -30,7 +30,7 @@ function getCatFood() {
   for (var i = 0; i < data.length; i++) {
     var productType = data[i].types
     var productName = "<h2>" + data[i].name + "</h2>";
-    var breeds = "<p>" + data[i].breeds + "</p>";
+    var breeds = "<p>Good for: " + data[i].breeds + " breeds</p>";
     // console.log(data[i]);
     for (var b = 0; b < productType.length; b++) {
       var style = "<h4>" + productType[b].type + "</h4>";
@@ -40,7 +40,7 @@ function getCatFood() {
         var volumeName = "<p>" + volumeType[c].name + "</p>";
         var volumePrice = "<p>" + volumeType[c].price + "</p>";
         // console.log(productName, style, volumeName, volumePrice);
-        card.innerHTML += "<div class='cardStyle'>" + productName + style + volumeName + volumePrice + breeds + "</div>"
+        catCard.innerHTML += "<div class='cardStyle'>" + productName + style + volumeName + volumePrice + breeds + "</div>"
       }
     }
   }
