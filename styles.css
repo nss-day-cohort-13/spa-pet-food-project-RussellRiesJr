@@ -1,0 +1,9 @@
+.cardStyle {
+  display: inline-block;
+  border: 2px solid black;
+  background: yellow;
+  width: 25%;
+  padding: 2%;
+  text-align: center;
+  margin: 1%;
+}
