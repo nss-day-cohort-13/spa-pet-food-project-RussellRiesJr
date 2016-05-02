@@ -1,4 +1,5 @@
 var dogRequest = new XMLHttpRequest();
+var catRequest = new XMLHttpRequest();
 var card = document.getElementById("cardLocation")
 var newCard = card;
 
@@ -30,6 +31,11 @@ function errorAlert() {
 dogRequest.addEventListener("load", getDogFood);
 dogRequest.addEventListener("error", errorAlert);
 
+catRequest.addEventListener("load", getCatFood);
+catRequest.addEventListener("error", errorAlert);
+
 dogRequest.open("GET", "dog_food.json");
+catRequest.open("GET", "cat_food.json");
 
 dogRequest.send();
+catRequest.send();
