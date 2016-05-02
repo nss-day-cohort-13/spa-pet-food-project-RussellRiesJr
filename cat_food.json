@@ -2,10 +2,10 @@
   "cat_brands": [
     {
       "name": "Purrina",
-      "breeds": ["Siamese", "Bengal", "Showshoe", "Munchkin"],
+      "breeds": ["Siamese", " Bengal", " Showshoe", " Munchkin"],
       "types": [
         {
-          "type": "kitten",
+          "type": "Kitten",
           "volumes": [
             {
               "name": "20oz",
@@ -22,7 +22,7 @@
           ]
         },
         {
-          "type": "elite",
+          "type": "Elite",
           "volumes": [
             {
               "name": "20oz",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Meow Mix",
-      "breeds": ["Manx", "Egyptian Mau", "Himalayan", "Rag Doll"],
+      "breeds": ["Manx", " Egyptian Mau", " Himalayan", " Rag Doll"],
       "types": [
         {
           "type": "Kitten",
